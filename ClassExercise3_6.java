@@ -1,46 +1,54 @@
 
+/**
+ * Author: Eli Brennan
+ * Class: CSC 200
+ * Date: 10/6/2015
+ */
 import javax.swing.JOptionPane;
 public class ClassExercise3_6 {
+	//Here I create enum for the months of the year.
 	public enum Months {
 		January, Febuary, March, April, May, June, July, August, September, October, November, December
 	}	
 	
 	public static void main(String[] args) {
+		//Here I create an array call choices with the identifier Months that I created earlier.
 		Months[] choices = {Months.January, Months.Febuary, Months.March, Months.April, Months.May,
 				Months.June,Months.July, Months.August, Months.September, Months.October,
 				Months.November, Months.December};
-		
-		boolean continueLoop = true;
+		//Set input equal to January to initialize the variable.
 		Months input = Months.January;
+		//Created a while loop to include the switch case for the months, outputting the specific phrase for each season
+		//with JOptionPane
 		while (input != null){
 				input = (Months) JOptionPane.showInputDialog(
 			 					null, "Select a month from the list.", "Months",
 			 					JOptionPane.INFORMATION_MESSAGE, null, choices, 
 			 					choices[0]);
 			 			switch (input) {
-						case January: System.out.println("Do you want to build a snow man?");
+						case January: JOptionPane.showMessageDialog(null, "Do you want to build a snow man?");
 							break;
-						case Febuary: System.out.println("Do you want to build a snow man?");
+						case Febuary: JOptionPane.showMessageDialog(null, "Do you want to build a snow man?");
 							break;
-						case March: System.out.println("Happy Spring days!");
+						case March: JOptionPane.showMessageDialog(null, "Happy Spring days!");
 							break;
-						case April: System.out.println("Happy Spring days!");
+						case April: JOptionPane.showMessageDialog(null, "Happy Spring days!");
 							break;
-						case May: System.out.println("Happy Spring days!");
+						case May: JOptionPane.showMessageDialog(null, "Happy Spring days!");
 							break;
-						case June: System.out.println("It’s a summer time.");
+						case June: JOptionPane.showMessageDialog(null, "It’s a summer time.");
 							break;
-						case July: System.out.println("It’s a summer time.");
+						case July: JOptionPane.showMessageDialog(null, "It’s a summer time.");
 							break;
-						case August: System.out.println("It’s a summer time.");
+						case August: JOptionPane.showMessageDialog(null, "It’s a summer time.");
 							break;
-						case September: System.out.println("Welcome to the foliage season!");
+						case September: JOptionPane.showMessageDialog(null, "Welcome to the foliage season!");
 							break;
-						case October: System.out.println("Welcome to the foliage season!");
+						case October: JOptionPane.showMessageDialog(null, "Welcome to the foliage season!");
 							break;
-						case November: System.out.println("Welcome to the foliage season!");
+						case November: JOptionPane.showMessageDialog(null, "Welcome to the foliage season!");
 							break;
-						case December: System.out.println("Do you want to build a snow man?");
+						case December: JOptionPane.showMessageDialog(null, "Do you want to build a snow man?");
 							break;
 						}
 					}
